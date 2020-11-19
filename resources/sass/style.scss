@@ -1,0 +1,39 @@
+@import 'variables';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: $primary-font !important;
+    background-color: #fff !important;
+    font-size: .9em !important;
+    font-weight: 500 !important;
+    position: relative !important;
+}
+
+.secondary-font{
+    font-family: $secondary-font;
+}
+
+.blob{
+    background-image: url('../images/svg/blob.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+.blob1{
+    background-image: url('../images/svg/blob1.svg');
+    background-size: 100% 100%;
+}
+
+.my-name{
+    font-size: 4.5em;
+    font-family: $secondary-font;
+}

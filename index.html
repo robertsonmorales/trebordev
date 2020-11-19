@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Righteous&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="resources/sass/style.css">
+    <script src="resources/js/script.js"></script>
+</head>
+<body data-spy="scroll" data-target="#navbar-header" data-offset="0">
+    <div class="container" id="home">
+        <nav class="navbar navbar-light px-2 py-4 bg-white position-sticky fixed-top" id="navbar-header">
+            <a class="navbar-brand font-weight-bolder secondary-font" href="#home">
+                <span class="text-primary">trebor</span><span class="text-dark">dev</span>
+            </a>
+
+            <ul class="nav nav-pills" role="tablist">
+                <li class="nav-item mr-2">
+                  <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item mr-2">
+                  <a class="nav-link" href="#about-me">About Me</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="#my-works">My Works</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="row no-gutters px-2 py-5 my-3 align-items-center">
+                <div class="col blob1">
+                    <h6 class="text-muted">Hi my name is Robert</h6>
+                    <h1 class="font-weight-bolder my-name">I'm a Web <span class="text-primary">Designer</span> and Developer</h1>
+                </div>
+                <div class="col text-right blob">
+                    <img src="resources/images/svg/undraw_feeling_proud_qne1.svg" class="img-fluid" width="450">
+                </div>
+            </div>
+
+            <div class="row no-gutters px-2 py-5 my-3 align-items-center" id="about-me">
+                <div class="col">
+                    <h1 class="font-weight-bolder my-name">
+                        <div>Robert</div>
+                        <div>Morales</div>
+                    </h1>
+                    <h6 class="text-muted">I'm a developer in love with web development technologies and discovering new opportunities.</h6>
+
+                    <br>
+
+                    <h3 class="secondary-font">General Info</h3>
+
+                    <div>
+                        <div class="row mb-2">
+                            <div class="col">Date of Birth:</div>
+                            <div class="col">September 27, 1999</div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col">Address:</div>
+                            <div class="col">Phase 4, San Jose Height, Muzon, San Jose Del Monte, Bulacan, Philippines</div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col">Email:</div>
+                            <div class="col"><span class="text-primary">moralesso152842@gmail.com</span>, <span class="text-primary">trebormoralesson@gmail.com</span></div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col">Mobile Number:</div>
+                            <div class="col">(+63)938-165-1462, <br>(+63)955-280-8438</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-right">
+                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="img-fluid rounded" width="300">
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
