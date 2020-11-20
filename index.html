@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index Page</title>
+    <title>trebordev</title>
 
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -15,9 +15,9 @@
     <link rel="stylesheet" href="resources/sass/style.css">
     <script src="resources/js/script.js"></script>
 </head>
-<body data-spy="scroll" data-target="#navbar-header" data-offset="0">
-    <div class="container" id="home">
-        <nav class="navbar navbar-light px-2 py-4 bg-white position-sticky fixed-top" id="navbar-header">
+<body>
+    <div class="container">
+        <nav class="navbar navbar-light py-4 bg-white position-sticky fixed-top" id="navbar-header">
             <a class="navbar-brand font-weight-bolder secondary-font" href="#home">
                 <span class="text-primary">trebor</span><span class="text-dark">dev</span>
             </a>
@@ -30,77 +30,65 @@
                   <a class="nav-link" href="#about-me">About Me</a>
                 </li>
                 <li class="nav-item mr-2">
-                    <a class="nav-link" href="#my-works">My Works</a>
-                </li>
-                <li class="nav-item mr-2">
                     <a class="nav-link" href="#services">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
         </nav>
 
         <main>
-            <div class="row no-gutters px-2 py-5 my-3">
-                <div class="col">
-                    <h6 class="text-muted">Hi my name is Robert</h6>
+            <section class="row no-gutters py-5 my-3 align-items-center" id="home">
+                <div class="col-7">
+                    <h6 class="text-muted">Hi there! My name is Robert</h6>
                     <h1 class="font-weight-bolder my-name">I'm a Web <span class="text-primary">Designer</span> and Developer</h1>
+                    <div class="action-group">
+                        <a href="#view-works" class="btn btn-primary btn-lg rounded mr-2 font-weight-normal">View Works</a>
+                        <a href="#contact-me" class="btn btn-secondary btn-lg rounded font-weight-normal">Contact Me</a>
+                    </div>
                 </div>
-                <div class="col text-right blob">
-                    <img src="resources/images/svg/undraw_feeling_proud_qne1.svg" class="img-fluid" width="450">
+                <div class="col-5 text-right blob">
+                    <img src="resources/images/svg/developer.svg" class="img-fluid">
                 </div>
-            </div>
+            </section>
 
-            <div class="row no-gutters px-2 py-5 my-3" id="about-me">
-                <div class="col">
-                    <h1 class="font-weight-bolder my-name">
-                        <div>Robert</div>
-                        <div>Morales</div>
+            <section class="row no-gutters px-2 py-5 my-3" id="about-me">
+                <div class="col-6 mr-5">
+                    <h1 class="text-center">
+                        <span>About Me</span>
                     </h1>
-                    <h6 class="text-muted">I'm a developer in love with web development technologies and discovering new opportunities.</h6>
-
-                    <br>
-
-                    <h3 class="secondary-font">General Info</h3>
-
-                    <div>
-                        <div class="row mb-2">
-                            <div class="col">Date of Birth:</div>
-                            <div class="col">September 27, 1999</div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col">Address:</div>
-                            <div class="col">Phase 4, San Jose Height, Muzon, San Jose Del Monte, Bulacan, Philippines</div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col">Email:</div>
-                            <div class="col"><span class="text-primary">moralesso152842@gmail.com</span>, <span class="text-primary">trebormoralesson@gmail.com</span></div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col">Mobile Number:</div>
-                            <div class="col">(+63)938-165-1462, <br>(+63)955-280-8438</div>
-                        </div>
-                    </div>
-
-                    <h3 class="secondary-font">Skills</h3>
-
-                    <div class="row mb-2">
-                        <div class="col">Adobe XD</div>
-                        <div class="col">PHP</div>
-                        <div class="col">Laravel Framework</div>
-                    </div>
+                    <h6 class="text-muted" style="line-height: 25px; text-align: justify;">I'm a developer in love with web development technologies and discovering new opportunities that'll widen my knowledge and would love to deliver it. I'm 21 years old, current living in Phase 4, San Jose Height, Muzon, San Jose Del Monte, Bulacan, Philippines.</h6>
                 </div>
-                <div class="col text-right">
-                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="img-fluid rounded" width="300">
-                </div>
-            </div>
-
-            <div class="row no-gutters px-2 py-5 my-3" id="my-works">
                 <div class="col">
-                    <div class="card-deck">
+                    <h3>Deliverables Skills</h3>
+
+                    <div class="d-flex mb-2">
+                        <div class="card shadow p-3 border-0 mr-4" style="width: 5rem;">
+                            <img src="resources/images/svg/adobe_xd.svg" alt="adobe xd" class="img-fluid">
+                        </div>
+
+                        <div class="card shadow p-3 border-0 mr-4" style="width: 5rem;">
+                            <img src="resources/images/svg/html-5.svg" alt="html 5" class="img-fluid">
+                        </div>
+
+                        <div class="card shadow p-3 border-0 mr-4" style="width: 5rem;">
+                            <img src="resources/images/svg/php.svg" alt="php" class="img-fluid">
+                        </div>
+                        
+                        <div class="card shadow p-3 border-0 mr-4" style="width: 5rem;">
+                            <img src="resources/images/svg/javascript.svg" alt="php" class="img-fluid">
+                        </div>
+                        
+                        <div class="card shadow p-3 border-0 mr-4" style="width: 5rem;">
+                            <img src="resources/images/svg/css.svg" alt="php" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="row no-gutters px-2 py-5 my-3" id="view-works">
+                <div class="col">
+                    <div class="card-deck mb-5">
                         <div class="card">
-                            <img class="card-img-top" src="https://cdn.dribbble.com/users/1474676/screenshots/8201513/media/6370b26df348778503671cfaae024d14.png?compress=1&resize=400x300" alt="Card image cap">
+                            <img class="card-img-top" src="https://images.unsplash.com/photo-1581287053822-fd7bf4f4bfec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="card image cap">
                             <div class="card-body">
                                 <a href="#" class="card-text font-weight-bolder text-primary">POS and Inventory Management System</a>
                                 <h5 class="card-title font-weight-bolder">Sunrise Floating Restaurant</h5>
@@ -109,16 +97,7 @@
                             </div>
                         </div>
                         <div class="card">
-                            <img class="card-img-top" src="https://cdn.dribbble.com/users/1474676/screenshots/8201513/media/6370b26df348778503671cfaae024d14.png?compress=1&resize=400x300" alt="Card image cap">
-                            <div class="card-body">
-                                <a href="#" class="card-text font-weight-bolder text-primary">POS and Inventory Management System</a>
-                                <h5 class="card-title font-weight-bolder">Sunrise Floating Restaurant</h5>
-                                <p class="card-text text-muted">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <img class="card-img-top" src="https://cdn.dribbble.com/users/1474676/screenshots/8201513/media/6370b26df348778503671cfaae024d14.png?compress=1&resize=400x300" alt="Card image cap">
+                            <img class="card-img-top" src="https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Card image cap">
                             <div class="card-body">
                                 <a href="#" class="card-text font-weight-bolder text-primary">POS and Inventory Management System</a>
                                 <h5 class="card-title font-weight-bolder">Sunrise Floating Restaurant</h5>
@@ -128,7 +107,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+
         </main>
     </div>
 </body>
