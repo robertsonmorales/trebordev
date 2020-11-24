@@ -11,18 +11,20 @@
     <script src="node_modules/feather-icons/dist/feather.min.js"></script>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,900;1,600;1,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="resources/sass/style.css">
     <script src="resources/js/script.js"></script>
+
+    <!-- <link rel="shortcut icon" href="resources/images/logo/favicon2/logo_size.jpg" type="image/x-icon"> -->
 </head>
-<body id="home" data-spy="scroll" data-target="#navbar" data-offset="0">
-    <nav class="navbar navbar-expand-lg navbar-light px-4 py-3 position-sticky fixed-top bg-light" id="navbar">
-        <a class="navbar-brand font-weight-bolder secondary-font" href="#home">
+<body data-spy="scroll" data-target="#navbar" data-offset="0" id="index">
+    <nav class="navbar navbar-expand-md navbar-white px-sm-5 py-2 position-sticky fixed-top bg-white" id="navbar">
+        <a class="navbar-brand font-weight-bold secondary-font" href="#index">
             <span class="text-primary">trebor</span><span class="text-dark">dev</span>
         </a>
         
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleNavbar" aria-controls="toggleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleNavbar" aria-controls="toggleNavbar" aria-expanded="false" aria-label="Toggle navigation" style="outline: none;">
           <i data-feather="menu"></i>
         </button>
       
@@ -30,48 +32,50 @@
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
 
             <div class="navbar-text">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item mr-2">
-                        <a class="nav-link text-muted font-weight-bold navbar" href="#home" id="nav-home" onclick="navSelected('nav-home')">Home</a>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 w-xs-100">
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-muted navbar" href="#about-me" id="nav-about-me" onclick="navSelected('nav-about-me')">About Me</a>
                     </li>
-                    <li class="nav-item mr-2">
-                        <a class="nav-link text-muted font-weight-bold navbar" href="#about-me" id="nav-about-me" onclick="navSelected('nav-about-me')">About Me</a>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-muted navbar" href="#works" id="nav-works" onclick="navSelected('nav-works')">Works</a>
                     </li>
-                    <li class="nav-item mr-2">
-                        <a class="nav-link text-muted font-weight-bold navbar" href="#my-works" id="nav-my-works" onclick="navSelected('nav-my-works')">My Works</a>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-muted navbar" href="#resume" id="nav-resume" onclick="navSelected('nav-works')">Resume</a>
                     </li>
-                    <li class="nav-item mr-2">
-                        <a class="nav-link text-muted font-weight-bold navbar" href="#contact-me" id="nav-contact" onclick="navSelected('nav-contact-me')">Contact Me</a>
+                    <li class="nav-item mr-3">
+                        <a class="nav-link text-muted navbar" href="#services" id="nav-services" onclick="navSelected('nav-works')">Services</a>
+                    </li>
+                    <li class="nav-item mr-0">
+                        <a class="nav-link text-muted navbar" href="#contact" id="nav-contact" onclick="navSelected('nav-contact')">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     
-    <div class="container mb-0">
+    <div class="container-fluid px-sm-5">
         <main>
 
             <!-- home -->
-            <section class="row no-gutters py-5 my-5">
+            <section class="row no-gutters px-sm-2 py-5 my-5">
                 <div class="col text-center">
                     <div class="mb-4">
                         <img src="resources/images/me/58919933.jpg" class="img-fluid rounded-circle shadow profile-animation">
                     </div>
 
-                    <h6 class="text-muted bg-light">My name is Robert, I'm a Web Designer & Developer</h6>
-                    <h1 class="font-weight-bolder catch-phrase">Let's talk, <span class="text-primary">Design</span> and <span class="text-primary">Develop</span> interesting websites</h1>
-
-                    <div class="mb-4"></div>
-
+                    <h6 class="text-muted">Hi, I'm Robert</h6>
+                    <h6 class="mb-lg-4 text-muted">Web Designer & Developer</h6>
+                    <h1 class="catch-phrase bg-white">Let's <span class="text-primary">build</span>, <span class="text-primary">design</span><br> and <span class="text-primary">develop</span> interesting <br> websites together.</h1>
+                    <br>
                     <div class="d-flex justify-content-center">
                         <div class="mr-4">
-                            <a href="https://web.facebook.com/profile.php?id=100004962736826" title="You can visit me at facebook" target="_blank"><i data-feather="facebook"></i></a>
+                            <a class="text-dark" href="https://web.facebook.com/profile.php?id=100004962736826" title="Connect with me at facebook" target="_blank"><i data-feather="facebook"></i></a>
                         </div>
                         <div class="mr-4">
-                            <a href="https://github.com/RobertPujante" title="You can visit me at github" target="_blank"><i data-feather="github"></i></a>
+                            <a class="text-dark" href="https://github.com/RobertPujante" title="Visit me at github" target="_blank"><i data-feather="github"></i></a>
                         </div>
                         <div class="mr-4">
-                            <a href="http://www.linkedin.com/in/robert-morales-517a721bb" title="You can visit me at linkedin" target="_blank"><i data-feather="linkedin"></i></a>
+                            <a class="text-dark" href="http://www.linkedin.com/in/robert-morales-517a721bb" title="Connect with me at linkedin" target="_blank"><i data-feather="linkedin"></i></a>
                         </div>
                     </div>
                 </div>
@@ -79,64 +83,28 @@
             <!-- ends ere -->
 
             <!-- about me -->
-            <section class="row no-gutters px-2 py-5 my-3 align-items-center" id="about-me">
-                <div class="col-lg text-left mb-4 ">
-                    <br><br>     
-                    <img src="resources/images/me/1605970964111.jpg" class="img-fluid rounded-circle shadow" width="350">
+            <section class="row no-gutters py-5 my-5 align-items-center" id="about-me">
+                <div class="col-md mb-sm-4 text-center mr-lg-5">
+                    <br><br>
+                    <img src="resources/images/me/1605970964111.jpg" class="img-fluid rounded-circle shadow w-75">
+                    <br>
                 </div>
 
                 <div class="col">   
-                    <br><br>
-                    <h3 class="secondary-font font-weight-bold">
-                        <span class="text-primary">about</span>-<span class="text-dark">me</span>
-                    </h3>
-                    <p class="text-muted bg-light" style="line-height: 25px; font-size: 1em;">I'm a developer in love with web development technologies and discovering new opportunities that'll widen my knowledge and would love to deliver it. I'm 21 years old, currently living in Bulacan, Central Luzon, Philippines.</p>
-
-                    <br>
-                    <h5 class="secondary-font font-weight-bold">
-                        <span class="text-primary">my</span>-<span class="text-dark">skills</span>
-                    </h5>
-
-                    <div class="row no-gutters align-items-center mb-4">
-                        <div class="card p-3 border-0 mr-4 mb-4 new-card bg-white" style="width: 5rem;">
-                            <img src="resources/images/svg/adobe_xd.svg" alt="adobe xd" class="img-fluid">
-                        </div>
-
-                        <div class="card p-3 border-0 mr-4 mb-4 new-card bg-white" style="width: 5rem;">
-                            <img src="resources/images/svg/html-5.svg" alt="html 5" class="img-fluid">
-                        </div>
-                    
-                        <div class="card p-3 border-0 mr-4 mb-4 new-card bg-white" style="width: 5rem;">
-                            <img src="resources/images/svg/css.svg" alt="css" class="img-fluid">
-                        </div>
-
-                        <div class="card p-3 border-0 mr-4 mb-4 new-card bg-white" style="width: 5rem;">
-                            <img src="resources/images/svg/javascript.svg" alt="javascript" class="img-fluid">
-                        </div>
-
-                        <div class="card p-3 border-0 mr-4 mb-4 new-card bg-white" style="width: 5rem;">
-                            <img src="resources/images/svg/php.svg" alt="php" class="img-fluid">
-                        </div>
-
-                        <div class="card p-3 border-0 mb-4 new-card bg-white" style="width: 5rem;">
-                            <img src="resources/images/svg/laravel.svg" alt="laravel" class="img-fluid">
-                        </div>
-                    </div>
+                    <h3 class="mb-4 text-center">About Me</h3>
+                    <p class="text-muted bg-white" style="line-height: 25px; font-size: 1em;">I'm a <strong>Junior Developer</strong>, I enjoy designing and developing websites and discovering new opportunities that'll widen my skills and love to deliver it. I'm <strong>21</strong> years old, currently living in Bulacan, Central Luzon, <strong>Philippines</strong>. I focus on bringing the right information to the client or customer so that it could bring positive feedback to its users. So, let's work together on building your ideal website.</p>
                 </div>
             </section>
             <!-- ends here -->
-
             <!-- my works -->
-            <section class="row no-gutters px-2 py-xs-1 py-sm-2 py-md-3 py-lg-4 py-xl-5" id="my-works">
+            <section class="row no-gutters py-xs-1 py-sm-2 py-md-3 py-lg-4 py-xl-5" id="works">
                 <div class="col">
                     <br><br>
-                    <h3 class="secondary-font font-weight-bold">
-                        <span class="text-primary">my</span>-<span class="text-dark">works</span>
-                    </h3>
+                    <h3 class="text-center mb-4">Works</h3>
 
                     <div class="card-deck">
 
-                        <div class="card new-card border-0 overflow-hidden mb-4">
+                        <div class="card new-card border-0 rounded overflow-hidden mb-4">
                             <img class="card-img-top" src="https://images.unsplash.com/photo-1581287053822-fd7bf4f4bfec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="card image cap">
                             <div class="card-body">
                                 <p class="card-text font-weight-500 text-primary">POS & Inventory</p>
@@ -146,7 +114,7 @@
                             </div>
                         </div>
 
-                        <div class="card new-card border-0 overflow-hidden mb-4">
+                        <div class="card new-card border-0 rounded overflow-hidden mb-4">
                             <img class="card-img-top" src="https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Card image cap">
                             <div class="card-body">
                                 <p class="card-text font-weight-500 text-primary">E-commerce</p>
@@ -158,7 +126,7 @@
 
                         <div class="w-100 d-none d-sm-block d-md-block d-lg-none"></div>
 
-                        <div class="card new-card border-0 overflow-hidden mb-4">
+                        <div class="card new-card border-0 rounded overflow-hidden mb-4">
                             <img class="card-img-top" src="https://i.pinimg.com/736x/bc/9f/45/bc9f45faaabe200f75e8450fcf3b35a9.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <p class="card-text font-weight-500 text-primary">Boarding House Rental</p>
@@ -168,7 +136,7 @@
                             </div>
                         </div>
 
-                        <div class="card new-card border-0 overflow-hidden mb-4">
+                        <div class="card new-card border-0 rounded overflow-hidden mb-4">
                             <img class="card-img-top" src="https://i.pinimg.com/736x/bc/9f/45/bc9f45faaabe200f75e8450fcf3b35a9.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <p class="card-text font-weight-500 text-primary">Boarding House Rental</p>
@@ -183,36 +151,33 @@
             <!-- ends here -->
 
             <!-- contact me -->
-            <section class="row no-gutters px-2 py-5 my-3" id="contact-me">
-                <div class="col-md-7"> 
-                    <h3 class="secondary-font font-weight-bold">
-                        <span class="text-primary">contact</span>-<span class="text-dark">me</span>
-                    </h3>
-                    <p class="text-muted bg-light" style="line-height: 25px; font-size: 1em;">I focus on bringing the right information to the client/customer so that it could
-                        bring positive feedback to its users. So, let's work together on building your ideal website.</p>
-                </div>
-                <div class="col-md-5">
-                    <div class="bg-white new-card p-4 ">
-                        <h5 class="secondary-font font-weight-bold">
-                            <span class="text-primary">send</span>-<span class="text-dark">a-message</span>
-                        </h5>
+            <section class="row no-gutters py-5 my-3" id="contact">
+                <div class="col-md d-flex flex-column justify-content-center">
+                    <br><br>
+                    <h3 class="text-center mb-4">Contact</h3>
+                    <div class="bg-white new-card p-4">
+                        <h5>Send a Message</h5>
 
                         <form action="" method="POST" enctype="multipart/form-data">
                             <div class="form-group">
                                 <label for="name" class="text-muted">Name <span class="text-danger">*</span></label>
                                 <input type="text" name="name" id="name" class="form-control">
+                                <span class="text-danger" id="error-name" style="font-size: .8em;"></span>
                             </div>
                             <div class="form-group">
                                 <label for="email" class="text-muted">Email Address <span class="text-danger">*</span></label>
                                 <input type="email" name="email" id="email" class="form-control">
+                                <span class="text-danger" id="error-email" style="font-size: .8em;"></span>
                             </div>
                             <div class="form-group">
                                 <label for="address" class="text-muted">Address <span class="text-danger">*</span></label>
-                                <input type="text" name="address" id="email" class="form-control">
+                                <input type="text" name="address" id="address" class="form-control">
+                                <span class="text-danger" id="error-address" style="font-size: .8em;"></span>
                             </div>
                             <div class="form-group">
                                 <label for="message" class="text-muted">How can I help? <span class="text-danger">*</span></label>
-                                <textarea name="message" id="message" cols="30" rows="5" class="form-control" style="resize: none;" placeholder=""></textarea>
+                                <textarea name="message" id="message" cols="30" rows="5" class="form-control" style="resize: none;"></textarea>
+                                <span class="text-danger" id="error-message" style="font-size: .8em;"></span>
                             </div>
                             <div class="form-group text-right row no-gutters">
                                 <div class="col-2 mr-2">
@@ -220,7 +185,12 @@
                                     <button type="button" title="Attach File" class="btn btn-light"><i data-feather="paperclip"></i></button>
                                 </div>
                                 <div class="col">
-                                    <button type="submit" class="btn btn-primary">Submit Message</button>
+                                    <button type="button" class="btn btn-primary font-weight-normal" id="btn-submit">
+                                        <div class="spinner-border spinner-border-sm d-none" id="spinner" role="status">
+                                            <span class="sr-only">Loading...</span>
+                                        </div>
+                                        <span id="submit-message">Submit Message</span>
+                                    </button>
                                 </div>
                             </div>
                         </form>
