@@ -1,0 +1,25 @@
+additional features
+- when sending a message, send an thank you email template to user
+- file attachment in messaging
+- try changing the contact form to messaging section
+
+
+FOOTER
+- add my contact information
+- address, email, mobile number, map if ever
+- search about sitemap
+- add copyright section
+- put again social icons
+- branding logo
+
+
+NEW SECTIONS
+
+- welcome video message
+- works
+- testemonials
+- resume
+- services
+
+
+I focus on bringing the right information to the client or customer so that it could bring positive feedback to its users. So, let's work together on building your ideal website.

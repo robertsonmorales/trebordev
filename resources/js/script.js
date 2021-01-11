@@ -1,3 +1,5 @@
+feather.replace()
+
 function navSelected(id){
     let navbar = document.getElementsByClassName('navbar');
     for (let i = 0; i < navbar.length; i++) {
@@ -8,7 +10,32 @@ function navSelected(id){
     el.classList.add('nav-selected');
 }
 
-$(document).ready(function(){
+$(() => {
+    function getAge() {
+        var today = new Date();
+        var birthDate = new Date('09/27/1999');
+        var age = today.getFullYear() - birthDate.getFullYear();
+        var m = today.getMonth() - birthDate.getMonth();
+        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+            age = age - 1;
+        }
+
+        $('#my-age').html(age);
+    }
+
+    getAge();
+
+    $(document).on('scroll', function () {
+        $("#navbar").toggleClass('shadow-sm', $(this).scrollTop() > $("#navbar").height());
+        // $("#navbar").toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+	});
+
+    $('#dark-light-mode').on('click', function(){
+        $div = $('html');
+        $div.toggleClass('dark-mode');
+        $('.dark-theme').toggleClass('d-none');
+        $('.light-theme').toggleClass('d-none');
+    });
 
     $('#name').on('keyup', function(){
         validator('name', $(this).val());
