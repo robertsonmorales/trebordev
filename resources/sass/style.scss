@@ -1,7 +1,24 @@
-@import 'variables';
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-Regular.ttf');
+    font-display: swap;
+}
+
+$font: 'Poppins', sans-serif;
+
+$shadow: 0 6px 12px rgba(140,152,164,.075);
+$shadow-sm: 1px 3px 5px rgba(0,0,0,0.05);
+$dropdown-shadow: 0 10px 40px 10px rgba(140,152,164,.175);
+$border: .0625rem solid rgba(231,234,243,.7);
+$radius: .75rem;
+
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
 
 ::-webkit-scrollbar {
     width: 5px;
+    height: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -25,16 +42,17 @@ html{
 
 body{
     font-family: $font !important;
-    background-color: #fff !important;
+    background-color: #ffffff !important;
     line-height: $line-height-base !important;
     font-size: $font-size-base !important;
     font-weight: 500 !important;
-    background-image: url("../images/svg/background.svg");
-    background-position: center;
-    background-size: contain;
     position: relative;
-    overflow-y: scroll;
+    overflow-x: hidden;
     transition: all 1s ease;
+}
+
+.about-me{
+    line-height: 25px;
 }
 
 .active{
@@ -67,7 +85,6 @@ body{
     }
 
     .form-control{
-        font-family: $font !important;
         font-weight: 500;
         font-size: .9em;
         border: 1px solid #ddd;
@@ -80,70 +97,6 @@ body{
     }
 }
 
-.contact-option{
-    a{
-        width: 100%;
-        font-weight: 600;
-        font-size: 1em;        
-    }
-}
-
-.catch-phrase{
-    font-size: 1.7rem !important;
-    font-family: $font;
-    font-weight: 500 !important;
-    text-shadow: 1px 3px 3px rgba(0,0,0,0.1);
-}
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-    .catch-phrase{
-        font-size: 2.5rem !important;
-    }
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-    .catch-phrase{
-        font-size: 3rem !important;
-    }
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { 
-    .catch-phrase{
-        font-size: 3.3rem !important;
-    }
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-    .catch-phrase{
-        font-size: 3.5rem !important        
-    }
-}
-
-.profile-animation{
-    width: 130px;
-    transform: scale(1);
-    animation-name: profileGrow;
-    animation-duration: .4s;
-    animation-direction: normal;
-    transition: all .4s ease;
-}
-
-// animations
-@keyframes profileGrow {
-    from{
-        // width: 10px;
-        // height: 10px;
-
-        transform: scale(.1);
-    }
-
-    to{
-        transform: scale(1);
-        // width: 120px;
-        // height: 120px;
-    }
+.dark-mode{
+    filter: invert(100%) !important;
 }

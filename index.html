@@ -5,159 +5,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>trebordev</title>
 
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <script src="node_modules/feather-icons/dist/feather.min.js"></script>
+    <script src="plugins/jquery/dist/jquery.min.js"></script>
+    <script src="plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="plugins/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="plugins/bootstrap/dist/css/bootstrap.min.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,900;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="resources/sass/style.css">
-    <script src="resources/js/script.js"></script>
 
-    <!-- <link rel="shortcut icon" href="resources/images/logo/favicon2/logo_size.jpg" type="image/x-icon"> -->
+    <!-- <link rel="shortcut icon" href="resources/images/logo/favicon/logo_size.jpg" type="image/x-icon"> -->
 </head>
-<body data-spy="scroll" data-target="#navbar" data-offset="0" id="index">
-    <nav class="navbar navbar-expand-md navbar-white px-sm-5 py-2 position-sticky fixed-top bg-white" id="navbar">
-        <a class="navbar-brand font-weight-bold secondary-font" href="#index">
-            <span class="text-primary">trebor</span><span class="text-dark">dev</span>
-        </a>
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleNavbar" aria-controls="toggleNavbar" aria-expanded="false" aria-label="Toggle navigation" style="outline: none;">
-          <i data-feather="menu"></i>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="toggleNavbar">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
-
-            <div class="navbar-text">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 w-xs-100">
-                    <li class="nav-item mr-3">
-                        <a class="nav-link text-muted navbar" href="#about-me" id="nav-about-me" onclick="navSelected('nav-about-me')">About Me</a>
-                    </li>
-                    <li class="nav-item mr-3">
-                        <a class="nav-link text-muted navbar" href="#works" id="nav-works" onclick="navSelected('nav-works')">Works</a>
-                    </li>
-                    <li class="nav-item mr-3">
-                        <a class="nav-link text-muted navbar" href="#resume" id="nav-resume" onclick="navSelected('nav-works')">Resume</a>
-                    </li>
-                    <li class="nav-item mr-3">
-                        <a class="nav-link text-muted navbar" href="#services" id="nav-services" onclick="navSelected('nav-works')">Services</a>
-                    </li>
-                    <li class="nav-item mr-0">
-                        <a class="nav-link text-muted navbar" href="#contact" id="nav-contact" onclick="navSelected('nav-contact')">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<body id="index"> <!-- data-spy="scroll" data-target="#navbar" data-offset="0" -->
+    <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light bg-white px-sm-5 py-2 fixed-top" id="navbar">
+            <a class="navbar-brand font-weight-bold" href="#index">
+                <span class="text-primary">trebor</span><span class="text-dark ">dev</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleNavbar" aria-controls="toggleNavbar" aria-expanded="false" aria-label="Toggle navigation" style="outline: none;">
+              <i data-feather="menu"></i>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="toggleNavbar">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
     
-    <div class="container-fluid px-sm-5">
+                <div class="navbar-text">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 w-xs-100">
+                        <li class="nav-item mr-3">
+                            <a class="nav-link text-muted navbar" href="#index" id="nav-index" onclick="navSelected('nav-index')">Home</a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a class="nav-link text-muted navbar" href="#projects" id="nav-projects" onclick="navSelected('nav-projects')">Projects</a>
+                        </li>                    
+                        <li class="nav-item mr-3">
+                            <a class="nav-link text-muted navbar" href="#services" id="nav-services" onclick="navSelected('nav-works')">Services</a>
+                        </li>
+                        <li class="nav-item mr-3">
+                            <a class="nav-link text-muted navbar" href="#contact" id="nav-contact" onclick="navSelected('nav-contact')">Contact</a>
+                        </li>
+                        <li class="nav-item mr-3"></li>
+                        <li class="nav-item">
+                            <button class="nav-link text-muted navbar btn" title="Turn on dark mode" id="dark-light-mode">
+                                <span class="dark-theme"><i data-feather="moon"></i></span>
+                                <span class="light-theme d-none"><i data-feather="sun"></i></span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
         <main>
-
-            <!-- home -->
-            <section class="row no-gutters px-sm-2 py-5 my-5">
-                <div class="col text-center">
-                    <div class="mb-4">
-                        <img src="resources/images/me/58919933.jpg" class="img-fluid rounded-circle shadow profile-animation">
-                    </div>
-
-                    <h6 class="text-muted">Hi, I'm Robert</h6>
-                    <h6 class="mb-lg-4 text-muted">Web Designer & Developer</h6>
-                    <h1 class="catch-phrase bg-white">Let's <span class="text-primary">build</span>, <span class="text-primary">design</span><br> and <span class="text-primary">develop</span> interesting <br> websites together.</h1>
-                    <br>
-                    <div class="d-flex justify-content-center">
-                        <div class="mr-4">
-                            <a class="text-dark" href="https://web.facebook.com/profile.php?id=100004962736826" title="Connect with me at facebook" target="_blank"><i data-feather="facebook"></i></a>
-                        </div>
-                        <div class="mr-4">
-                            <a class="text-dark" href="https://github.com/RobertPujante" title="Visit me at github" target="_blank"><i data-feather="github"></i></a>
-                        </div>
-                        <div class="mr-4">
-                            <a class="text-dark" href="http://www.linkedin.com/in/robert-morales-517a721bb" title="Connect with me at linkedin" target="_blank"><i data-feather="linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- ends ere -->
-
-            <!-- about me -->
-            <section class="row no-gutters py-5 my-5 align-items-center" id="about-me">
-                <div class="col-md mb-sm-4 text-center mr-lg-5">
-                    <br><br>
-                    <img src="resources/images/me/1605970964111.jpg" class="img-fluid rounded-circle shadow w-75">
-                    <br>
-                </div>
-
-                <div class="col">   
-                    <h3 class="mb-4 text-center">About Me</h3>
-                    <p class="text-muted bg-white" style="line-height: 25px; font-size: 1em;">I'm a <strong>Junior Developer</strong>, I enjoy designing and developing websites and discovering new opportunities that'll widen my skills and love to deliver it. I'm <strong>21</strong> years old, currently living in Bulacan, Central Luzon, <strong>Philippines</strong>. I focus on bringing the right information to the client or customer so that it could bring positive feedback to its users. So, let's work together on building your ideal website.</p>
-                </div>
-            </section>
-            <!-- ends here -->
-            <!-- my works -->
-            <section class="row no-gutters py-xs-1 py-sm-2 py-md-3 py-lg-4 py-xl-5" id="works">
+            <section class="row no-gutters flex-column flex-md-row align-items-center justify-content-center py-5 my-5">
+    
                 <div class="col">
+                    <img src="resources/images/me/58919933.jpg" class="img-fluid">
+                </div>
+    
+                <div class="col">
+                    <h1 class="mb-2 font-weight-bold">- Hello I'm Robert a Web <span class="text-primary">Designer</span> & <span class="text-primary">Developer</span>.</h1>
+                    <h6 class="text-muted mb-4 about-me">I pretty much enjoy doing this job and I love discovering new opportunities that will strongly develop my skills and expertise. Let's design & develop things on the internet.</h6>
+                    
+                    <div class="d-flex justify-content-start">
+                        <a href="https://web.facebook.com/profile.php?id=100004962736826" title="Connect with me at facebook" target="_blank" class="mr-3 rounded-circle p-2 shadow" style="background-color: #38529a; color: #fff; text-decoration: none;">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        <a href="https://github.com/RobertPujante" title="Follow me at github" target="_blank" class="bg-dark mr-3 rounded-circle p-2 shadow" style="color: #fff; text-decoration: none;">
+                            <i data-feather="github"></i>
+                        </a>
+                        <a href="http://www.linkedin.com/in/robert-morales-517a721bb" title="Connect with me at linkedin" target="_blank" class="mr-3 rounded-circle p-2 shadow" style="background-color: #028bc8; color: #fff; text-decoration: none;">
+                            <i data-feather="linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            
+            </section>
+    
+            <!-- skills -->
+            <!-- <section class="row flex-column no-gutters align-items-center mb-4">
+                <div class="col mb-sm-4">
+                    <h1 class="catch-phrase">Skills and Expertise</h1>
+                </div>
+    
+                <div class="col d-flex justify-content-between">
+                    <img src="resources/images/svg/adobe_xd.svg" alt="adobe xd" class="img-fluid">
+                    <img src="resources/images/svg/html-5.svg" alt="html 5" class="img-fluid">
+                    <img src="resources/images/svg/css.svg" alt="css" class="img-fluid">
+                    <img src="resources/images/svg/javascript.svg" alt="javascript" class="img-fluid">
+                    <img src="resources/images/svg/php.svg" alt="php" class="img-fluid">
+                    <img src="resources/images/svg/laravel.svg" alt="laravel" class="img-fluid" width="120">
+                    <img src="resources/images/svg/git.svg" alt="git" class="img-fluid" width="120">
+                </div>
+            </section> -->
+            <!-- ends here -->
+    
+            <section class="row no-gutters py-xs-1 py-sm-2 py-md-3 py-lg-4 py-xl-5 vh-100" id="projects">
+                <div class="col text-center">
                     <br><br>
-                    <h3 class="text-center mb-4">Works</h3>
-
+                    <h1 class="catch-phrase mb-4">Projects</h1>
+    
                     <div class="card-deck">
-
-                        <div class="card new-card border-0 rounded overflow-hidden mb-4">
-                            <img class="card-img-top" src="https://images.unsplash.com/photo-1581287053822-fd7bf4f4bfec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="card image cap">
-                            <div class="card-body">
-                                <p class="card-text font-weight-500 text-primary">POS & Inventory</p>
-                                <h5 class="card-title font-weight-500">Sunrise Floating Restaurant</h5>
-                                <p class="card-text text-muted">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <div class="card new-card rounded">
+                            <img class="image-fluid" src="resources/images/works/dashboard.PNG" width="200">
+                            <div class="card-body text-left">
+                                <h4 class="card-title">Back-End Portal</h4>
+                                <p class="card-text">Some example text.</p>
+                                <a href="#" class="btn btn-primary">Overview</a>
                             </div>
                         </div>
-
-                        <div class="card new-card border-0 rounded overflow-hidden mb-4">
-                            <img class="card-img-top" src="https://images.unsplash.com/photo-1508921340878-ba53e1f016ec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text font-weight-500 text-primary">E-commerce</p>
-                                <h5 class="card-title font-weight-500">Carmen's Cakes & Pastries</h5>
-                                <p class="card-text text-muted">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-
-                        <div class="w-100 d-none d-sm-block d-md-block d-lg-none"></div>
-
-                        <div class="card new-card border-0 rounded overflow-hidden mb-4">
-                            <img class="card-img-top" src="https://i.pinimg.com/736x/bc/9f/45/bc9f45faaabe200f75e8450fcf3b35a9.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text font-weight-500 text-primary">Boarding House Rental</p>
-                                <h5 class="card-title font-weight-500">bhousify</h5>
-                                <p class="card-text text-muted">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-
-                        <div class="card new-card border-0 rounded overflow-hidden mb-4">
-                            <img class="card-img-top" src="https://i.pinimg.com/736x/bc/9f/45/bc9f45faaabe200f75e8450fcf3b35a9.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="card-text font-weight-500 text-primary">Boarding House Rental</p>
-                                <h5 class="card-title font-weight-500">bhousify</h5>
-                                <p class="card-text text-muted">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <div class="card new-card rounded">
+                            <img class="image-fluid" src="resources/images/works/dashboard.PNG" width="200">
+                            
+                            <div class="card-body text-left">
+                                <h4 class="card-title">E-Commerce</h4>
+                                <p class="card-text">Some example text.</p>
+                                <a href="#" class="btn btn-primary">Overview</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- ends here -->
-
-            <!-- contact me -->
+    
             <section class="row no-gutters py-5 my-3" id="contact">
                 <div class="col-md d-flex flex-column justify-content-center">
                     <br><br>
-                    <h3 class="text-center mb-4">Contact</h3>
+                    <h1 class="catch-phrase text-center mb-4">Contact</h1>
                     <div class="bg-white new-card p-4">
                         <h5>Send a Message</h5>
-
+    
                         <form action="" method="POST" enctype="multipart/form-data">
                             <div class="form-group">
                                 <label for="name" class="text-muted">Name <span class="text-danger">*</span></label>
@@ -197,10 +174,8 @@
                     </div>
                 </div>
             </section>
-            <!-- ends here -->
-
         </main>
     </div>
-    <script>feather.replace()</script>
+    <script src="resources/js/script.js"></script>
 </body>
 </html>
